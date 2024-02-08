@@ -1,0 +1,120 @@
+#contactBody{
+    height: 75vh;
+    background-color: white;
+    border-radius: 15px;
+    padding: 1rem;
+    margin: 2rem 2rem;
+    text-align: center;
+}
+.contactContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transition: 0.2s;
+}
+.contactLeft{
+    border-right: 1px solid black;
+    width: 100%;;
+    transition: 0.2s;
+}
+.contactRight{
+
+    width: 100%;
+}
+.contactLink{
+    text-align: left;
+    cursor: pointer;
+}
+.gap{
+    margin-left: 2rem;
+    transition: 0.2s;
+}
+.feed{
+    gap: 1rem;
+    margin: 1rem 5rem 1rem 5rem;
+    transition: 0.2s;
+}
+.gap:hover{
+    margin-left: 3rem;
+    transition: 0.2s;
+}
+.feed:hover{
+    color: orange;
+    transition: 0.2s;
+}
+form{
+    margin: 1px 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+input:focus,.comment:focus{
+    background-color: #333;
+    transition: 0.2s;
+    color: orange;
+}
+input{
+    text-align: left;
+    border-radius: 9px;
+    margin-top: 15px;
+    padding: 0.7rem 0.7rem;
+}
+input:nth-child(3){
+    height: 10rem;
+}
+
+.comment{
+    margin-top: 15px;
+    width: 100%;
+    height: 150px;
+    padding: 0.7rem 0.7rem;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 9px;
+    resize: none;
+}
+input#btnSubmit{
+    text-align: center;
+    background-color: orange;
+    width: 30%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+input#btnSubmit:hover{
+    color: black;
+    background-color: rgb(146, 255, 146);
+    transition: 0.2s;
+}
+
+@media only screen and (max-width:656px){
+    .con{
+        font-size: 4rem;
+        transition: 0.2s;
+    }
+    #contactBody{
+        height: 100%;
+        transition: 0.2s;
+    }
+    .contactContent{
+        font-size: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        transition: 0.2s;
+    }
+    .contactLeft{
+        border-right: none;
+        border-bottom: 1px solid black;
+        transition: 0.2s;
+    }
+}
+
+@media only screen and (max-width:546px){
+    .con{
+        font-size: 3rem;
+        transition: 0.2s;
+    }
+    .contactContent{
+        font-size: 0.6rem;
+        transition: 0.2s;
+    }
+}

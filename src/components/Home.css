@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+body{
+    background-color: #e7e7e7;
+}
+#home{
+    display: flex;
+}
+#bg-img{
+    background-image: url(img/cafeNav.jpg);
+    background-position: center;
+    width: 100%;
+    top: 0rem;
+    height: 60vh;
+    opacity: .7;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    z-index: -1;
+}
+.header{
+    transition: 0.2s;
+    position: absolute;
+    color: white;
+    top: 0;
+    font-size: 10rem;
+    display: flex;
+    margin-top: 4rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.94);
+}
+@media only screen and (max-width: 709px){
+    .header{
+        top: 20rem;
+    }
+}
+#homeBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1rem 1rem;
+    margin: 2rem 2rem;
+    height: 50%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2{
+    font-size: 5rem;
+    font-family: 'Caveat', cursive;
+}
+.homeCenter{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(224, 176, 108, 0.722);
+    width: 100%;
+    height: 45vh;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.1);
+}
+.HcLeft{
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    width: 35vw;
+    font-family: 'Kalam', cursive;
+    transition: 0.2s;
+}
+.HcRight{
+    margin-right: 2rem;
+}
+.Coffee{
+    width: 35vw;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.345);
+    transition: 0.2s;
+}
+.homeFoot{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 24px;
+    margin-bottom: 5rem;
+    font-family: 'Kalam', cursive;
+    transition: 0.2s;
+}
+@media only screen and (max-width:975px) {
+    .HcLeft{
+        font-size: 16.2px;
+        transition: 0.2s;
+    }
+    .Coffee{
+        width: 40vw;
+        transition: 0.2s;
+    }
+}
+@media only screen and (max-width:800px){
+    .homeCenter{
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+    }
+    .HcLeft{
+        margin-top: 1rem;
+        width: 80%;
+    }
+    .HcRight{
+        border: 0;
+    }
+    .Coffee{
+        margin-bottom: 1rem;
+    }
+    .homeFoot{
+        font-size: 15px;
+        transition: 0.2s;
+    }
+}
+@media only screen and (max-width: 709px){
+    .header{
+        font-size: 7rem;
+        transition: 0.2s;
+    }
+}
+@media only screen and (max-width:582px){
+    .homeCenter{
+        height: 80%;
+    }
+    .Coffee{
+        margin-top: 1rem;
+    }
+}
+@media only screen and (max-width:485px){
+    .header{
+        font-size: 6rem;
+        transition: 0.2s;
+    }
+}
+@media only screen and (max-width:450px){
+    .header{
+        font-size: 5rem;
+        transition: 0.2s;
+    }
+}

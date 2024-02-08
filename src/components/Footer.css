@@ -1,0 +1,24 @@
+footer{
+    background-color: #333;
+    padding: 4rem;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+}
+.footTop{
+    font-size: 4rem;
+    cursor: pointer;
+}
+.footTop:hover{
+    color: gainsboro;
+}
+.foot{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: orange;
+}
+.foot:hover{
+    color: white;
+}
